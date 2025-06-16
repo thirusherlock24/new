@@ -1,6 +1,3 @@
-// App.tsx or HomePage.tsx
-import React from "react";
-import "./HomePage.css";
 import { useState } from "react";
 export default function HomePage() {
       const [showPrograms, setShowPrograms] = useState(false);
@@ -9,7 +6,7 @@ export default function HomePage() {
     <div className="home-wrapper">
       {/* HEADER */}
        <header className="header flex justify-between items-center px-6 py-4 bg-white shadow">
-        <div className="logo text-xl font-bold">★ </div>
+        <div className="logo text-xl font-bold">★ </div>git branch -M main
         <nav className="nav flex gap-6">
           <a
             onClick={() => setShowPrograms(prev => !prev)}
