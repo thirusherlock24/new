@@ -106,7 +106,7 @@ export default function AuthForm() {
               checked={acceptTerms}
               onChange={(e) => setAcceptTerms(e.target.checked)}
             />
-            <label>I accept the terms and privacy policy</label>
+            <label>I accept to recieve RCS messages</label>
           </div>
           <div className="link-buttons">
             <button className="link">Terms</button>
