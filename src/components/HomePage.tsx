@@ -6,7 +6,7 @@ export default function HomePage() {
     <div className="home-wrapper">
       {/* HEADER */}
        <header className="header flex justify-between items-center px-6 py-4 bg-white shadow">
-        <div className="logo text-xl font-bold">★ </div>git branch -M main
+        <div className="logo text-xl font-bold">★ </div>
         <nav className="nav flex gap-6">
           <a
             onClick={() => setShowPrograms(prev => !prev)}
