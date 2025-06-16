@@ -49,8 +49,12 @@ export default function AuthForm() {
     if (error) {
       setMessage("❌ Login error.");
     } else if (data.length > 0) {
+
+        sessionStorage.setItem("isLoggedIn", "true"); // 👈 add this
+
       setMessage("✅ Login successful!");
           navigate("/home"); // 👈 Navigate to HomePage
+
     } else {
       setMessage("❌ Invalid credentials.");
     }
@@ -108,10 +112,10 @@ export default function AuthForm() {
             />
             <label>I accept to recieve RCS messages</label>
           </div>
-          <div className="link-buttons">
-            <button className="link">Terms</button>
-            <button className="link">Privacy</button>
-          </div>
+            <div className="link-buttons">
+            <button className="link" onClick={() => navigate("/terms")}>Terms</button>
+            <button className="link" onClick={() => navigate("/privacy")}>Privacy</button>
+            </div>
           <button onClick={handleSignup} className="btn signup-btn">
             Sign Up
           </button>
