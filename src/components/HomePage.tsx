@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './HomePage.css';
 export default function HomePage() {
       const [showPrograms, setShowPrograms] = useState(false);
 
